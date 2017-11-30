@@ -9,6 +9,11 @@
     "dev": "cross-env NODE_ENV=development webpack-dev-server --open --hot",
     "build": "cross-env NODE_ENV=production webpack --progress --hide-modules"
   },
+  "main": "dist/vue-loading.js",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:linguokang/vue-loading.git"
+  },
   "dependencies": {
     "vue": "^2.4.4"
   },
