@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>vue-loading</title>
+  </head>
+  <body>
+    <div id="app"></div>
+
+    <script src="./vue.min.js"></script>
+    <script src="./dist/vue-loading.js"></script>
+    <script>
+      var app1 = new Vue({
+        el: '#app',
+        data: {
+          message: 'Hello Vue!'
+        },
+        template: `<div class="app">
+                      <div class="app1"><vue-loading :isLoading="true" type="loading1" text="嘿嘿嘿" color="lightgreen" scale="1"></vue-loading></div>
+                      <div class="app1"><vue-loading :isLoading="true" type="loading2" text="嘿嘿嘿" color="lightgreen" scale="1"></vue-loading></div>
+                      <div class="app1"><vue-loading :isLoading="true" type="loading3" text="嘿嘿嘿" color="lightgreen" scale="1"></vue-loading></div>
+                      <div class="app1"><vue-loading :isLoading="true" type="loading4" text="嘿嘿嘿" color="lightgreen" scale="1"></vue-loading></div>
+                      <div class="app1"><vue-loading :isLoading="true" type="loading5" text="嘿嘿嘿" color="lightgreen" scale="1"></vue-loading></div>
+                      <div class="app1"><vue-loading :isLoading="true" type="loading6" text="嘿嘿嘿" color="lightgreen" scale="1"></vue-loading></div>
+                      <div class="app1"><vue-loading :isLoading="true" type="loading7" text="嘿嘿嘿" color="lightgreen" scale="1"></vue-loading></div>
+                      <div class="app1"><vue-loading :isLoading="true" type="loading8" text="嘿嘿嘿" color="lightgreen" scale="1"></vue-loading></div>
+                    </div>`
+      })
+
+    </script>
+  <style>
+    .app1{
+      position: relative;
+      display: inline-block;
+      width: 250px;
+      height: 250px;
+    }
+  </style>
+  </body>
+</html>
