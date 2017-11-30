@@ -2,6 +2,10 @@
 
 > A Vue component to vue-loading 一个加载中弹窗插件
 
+## DEMO
+
+[demo](https://linguokang.github.io/vue-loading/)
+
 ## 安装
 
 ``` bash
