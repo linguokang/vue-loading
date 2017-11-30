@@ -1,6 +1,6 @@
 # vue-loading
 
-> A Vue component to pay-keyboard 一个加载中弹窗插件
+> A Vue component to vue-loading 一个加载中弹窗插件
 
 ## 安装
 
@@ -8,18 +8,39 @@
 npm install vue-loading-easy -save
 ```
 
-## 使用
+## SPA使用
 
 ```bash
 import Loading from 'vue-loading-easy'
 
 Vue.use(Loading)
 
-// 或者直接使用script导入
-<script src="./node_modules/vue/dist/vue-loading.js"></script>
-
 // 作为组件的方式使用
 <vue-loading :isLoading='true'></vue-loading>
+```
+
+## 直接引入使用
+
+```bash
+
+ <body>
+    <div id="app"></div>
+
+    <script src="./vue.min.js"></script>
+    // 直接使用script导入
+    <script src="./dist/vue-loading.js"></script>
+    <script>
+      var app1 = new Vue({
+        el: '#app',
+        data: {
+          message: 'Hello Vue!'
+        },
+        template: `<div class="app">
+                      <div class="app1"><vue-loading :isLoading="true" type="loading1" text="嘿嘿嘿" color="lightgreen" scale="1"></vue-loading></div>
+                   </div>`
+      })
+    </script>
+  </body>
 ```
 
 ## 配置
